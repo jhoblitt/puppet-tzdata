@@ -39,7 +39,7 @@ class tzdata ($ensure = latest) {
         # https://github.com/puppetlabs/facter/commit/c61894994a5884fc8ac44f9e780d4b062097d124
         gentoo: {
           $tzdata_package_name = 'sys-libs/timezone-data'
-        } 
+        }
         default: {
           fail("Module ${module_name} is not supported on ${::operatingsystem}")
         }
