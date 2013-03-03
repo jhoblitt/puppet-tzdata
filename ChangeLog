@@ -1,0 +1,8 @@
+`v1.0.1
+=======
+
+Joshua Hoblitt <jhoblitt@cpan.org> (3):
+      * add a Rakefile with a lint target + setup for rspec with puppetlabs_spec_helper
+      * change license from GPLv2 or later to Apache 2.0
+      * enable travis-ci support
+
