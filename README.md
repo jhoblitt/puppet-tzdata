@@ -41,4 +41,4 @@ or simply
 Copyright
 ---------
 
-Copyright (C) 2012 Joshua Hoblitt <jhoblitt@cpan.org>
+Copyright (C) 2012-2013 Joshua Hoblitt <jhoblitt@cpan.org>

@@ -22,7 +22,7 @@
 #
 # === Copyright
 #
-# Copyright (C) 2012 Joshua Hoblitt
+# Copyright (C) 2012-2013 Joshua Hoblitt
 #
 
 class tzdata ($ensure = latest) {

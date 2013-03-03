@@ -2,7 +2,7 @@ name    'jhoblitt-tzdata'
 version '1.0.0'
 
 author 'Joshua Hoblitt <jhoblitt@cpan.org>'
-license 'GNU General Public License 2 or any later version'
+license 'Apache'
 project_page 'https://github.com/jhoblitt/puppet-tzdata'
 source 'https://github.com/jhoblitt/puppet-tzdata.git'
 summary 'install/update the Olson timezone database'
