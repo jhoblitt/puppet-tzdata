@@ -1,6 +1,8 @@
 Puppet tzdata Module
 ====================
 
+[![Build Status](https://travis-ci.org/jhoblitt/puppet-tzdata.png)](https://travis-ci.org/jhoblitt/puppet-tzdata)
+
 Description
 -----------
 
