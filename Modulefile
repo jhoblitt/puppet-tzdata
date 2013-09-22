@@ -9,4 +9,4 @@ summary 'install/update the Olson timezone database'
 description 'A simple puppet module to install (likely your core OS package set
 already) and keep up to date the tz database / zoneinfo database / Olson
 database.'
-dependency 'puppetlabs/stdlib', '>= 0.1.5'
+dependency 'puppetlabs/stdlib', '>= 3.0.0'
