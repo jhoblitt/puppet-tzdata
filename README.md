@@ -11,7 +11,7 @@ Puppet tzdata Module
     * [Basic](#basic)
     * [Always Update](#always-update)
     * [Install Only](#install-only)
-    * [uninstall](#uninstall)
+    * [Uninstall](#uninstall)
 4. [Limitations](#limitations)
     * [Tested Platforms](#tested-platforms)
 5. [Support](#support)
@@ -25,7 +25,7 @@ Install/update the Olson timezone database
 Description
 -----------
 
-A simple puppet module to install (likely your core OS package set already) and
+A simple puppet module to install (likely part of your core OS package set) and
 keep up to date the tz database / zoneinfo database / Olson database.
 
 Government entities have historically made changes to timezones and daylights
