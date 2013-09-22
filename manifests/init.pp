@@ -24,7 +24,6 @@
 #
 # Copyright (C) 2012-2013 Joshua Hoblitt
 #
-
 class tzdata ($ensure = latest) {
   validate_re($ensure, '^present$|^absent$|^latest$')
 

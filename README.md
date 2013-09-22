@@ -1,7 +1,26 @@
 Puppet tzdata Module
 ====================
 
-[![Build Status](https://travis-ci.org/jhoblitt/puppet-tzdata.png)](https://travis-ci.org/jhoblitt/puppet-tzdata)
+[![Build Status](https://travis-ci.org/jhoblitt/puppet-tzdata.png)](https://travis-ci.org/jhoblitt/puppet-tzdata) 
+
+#### Table of Contents
+
+1. [Overview](#overview)
+2. [Description](#description)
+3. [Usage](#usage)
+    * [Basic](#basic)
+    * [Always Update](#always-update)
+    * [Install Only](#install-only)
+    * [uninstall](#uninstall)
+4. [Limitations](#limitations)
+    * [Tested Platforms](#tested-platforms)
+5. [Support](#support)
+
+Overview
+--------
+
+Install/update the Olson timezone database
+
 
 Description
 -----------
@@ -29,18 +48,56 @@ ensure that the latest version is always installed.
 The intended usage of this module is to include it in virtually all of your
 manifests without having to pass any parameters to it.
 
-Examples
---------
 
+Usage
+-----
+
+### Basic
+
+```puppet
+    include tzdata
+```
+
+### Always Update
+
+This is the default behave and is semanticaaly the same as including the class
+in the manifest instead of declaring it.
+
+```puppet
     class { tzdata:
       ensure => latest, # default
     }
+```
 
-or simply
+### Install Only
 
-    include tzdata
+```puppet
+    class { tzdata:
+      ensure => present,
+    }
+```
 
-Copyright
----------
+### Uninstall
 
-Copyright (C) 2012-2013 Joshua Hoblitt <jhoblitt@cpan.org>
+```puppet
+    class { tzdata:
+      ensure => absent,
+    }
+```
+
+
+Limitations
+-----------
+
+### Tested Platforms
+
+* el5.x
+* el6.x
+* Gentoo 13.0
+
+
+Support
+-------
+
+Please log tickets and issues at
+[github](https://github.com/jhoblitt/puppet-tzdata/issues)
