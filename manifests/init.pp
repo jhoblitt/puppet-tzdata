@@ -28,21 +28,15 @@ class tzdata ($ensure = latest) {
   validate_re($ensure, '^present$|^absent$|^latest$')
 
   case $::osfamily {
-    redhat: {
+    'redhat': {
       # el5.x, el6.x
       $tzdata_package_name = 'tzdata'
     }
+    'gentoo': {
+      $tzdata_package_name = 'sys-libs/timezone-data'
+    }
     default: {
-      case $::operatingsystem {
-        # gentoo will not have it's own osfamily until facter 2.x
-        # https://github.com/puppetlabs/facter/commit/c61894994a5884fc8ac44f9e780d4b062097d124
-        gentoo: {
-          $tzdata_package_name = 'sys-libs/timezone-data'
-        }
-        default: {
-          fail("Module ${module_name} is not supported on ${::operatingsystem}")
-        }
-      }
+      fail("Module ${module_name} is not supported on ${::operatingsystem}")
     }
   }
 

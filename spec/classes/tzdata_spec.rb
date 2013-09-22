@@ -1,17 +1,16 @@
 require 'spec_helper'
 
-describe 'tzdata' do
-  let(:title) { 'redhat' }
+describe 'tzdata', :type => :class do
   let(:facts) { {:osfamily=> 'RedHat'} }
 
-  context 'default params' do
+  describe 'default params' do
     it do
       should include_class('tzdata')
       should contain_package('tzdata').with({ 'ensure' => 'latest' })
     end
   end
 
-  context 'with ensure => present' do
+  describe 'with ensure => present' do
     let(:params) { {:ensure => 'present'} }
 
     it do
@@ -20,7 +19,7 @@ describe 'tzdata' do
     end
   end
 
-  context 'with ensure => latest' do
+  describe 'with ensure => latest' do
     let(:params) { {:ensure => 'latest'} }
 
     it do
@@ -29,7 +28,7 @@ describe 'tzdata' do
     end
   end
 
-  context 'with ensure => absent' do
+  describe 'with ensure => absent' do
     let(:params) { {:ensure => 'absent'} }
 
     it do
@@ -38,8 +37,7 @@ describe 'tzdata' do
     end
   end
 
-  # invalid arg param
-  context 'with ensure => foo' do
+  describe 'with ensure => foo' do
     let(:params) { {:ensure => 'foo'} }
  
     it do
@@ -49,8 +47,13 @@ describe 'tzdata' do
     end
   end
 
-  # fail on unsupported osfamily
-  context 'unsupported osfamily' do
+  describe 'osfamily Gentoo' do
+    let(:facts) { {:osfamily=> 'Gentoo'} }
+
+    it { should include_class('tzdata') }
+  end
+
+  describe 'unsupported osfamily' do
     let(:facts) { {:osfamily=> 'Debian'} }
  
     it do
