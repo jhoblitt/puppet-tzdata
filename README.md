@@ -14,7 +14,10 @@ Puppet tzdata Module
     * [Uninstall](#uninstall)
 4. [Limitations](#limitations)
     * [Tested Platforms](#tested-platforms)
-5. [Support](#support)
+5. [Versioning](#versioning)
+6. [Support](#support)
+7. [See Also](#see-also)
+
 
 Overview
 --------
@@ -96,8 +99,22 @@ Limitations
 * Gentoo 13.0
 
 
+Versioning
+----------
+
+This module is versioned according to the [Semantic Versioning
+2.0.0](http://semver.org/spec/v2.0.0.html) specification.
+
+
 Support
 -------
 
 Please log tickets and issues at
 [github](https://github.com/jhoblitt/puppet-tzdata/issues)
+
+
+See Also
+--------
+
+ * [Time Zone Database](http://www.iana.org/time-zones)
+
