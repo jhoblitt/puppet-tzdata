@@ -5,7 +5,7 @@ describe 'tzdata', :type => :class do
 
   describe 'default params' do
     it do
-      should include_class('tzdata')
+      should contain_class('tzdata')
       should contain_package('tzdata').with({ 'ensure' => 'latest' })
     end
   end
@@ -14,7 +14,7 @@ describe 'tzdata', :type => :class do
     let(:params) { {:ensure => 'present'} }
 
     it do
-      should include_class('tzdata')
+      should contain_class('tzdata')
       should contain_package('tzdata').with({ 'ensure' => 'present' })
     end
   end
@@ -23,7 +23,7 @@ describe 'tzdata', :type => :class do
     let(:params) { {:ensure => 'latest'} }
 
     it do
-      should include_class('tzdata')
+      should contain_class('tzdata')
       should contain_package('tzdata').with({ 'ensure' => 'latest' })
     end
   end
@@ -32,7 +32,7 @@ describe 'tzdata', :type => :class do
     let(:params) { {:ensure => 'absent'} }
 
     it do
-      should include_class('tzdata')
+      should contain_class('tzdata')
       should contain_package('tzdata').with({ 'ensure' => 'absent' })
     end
   end
@@ -42,7 +42,7 @@ describe 'tzdata', :type => :class do
  
     it do
       expect {
-        should include_class('tzdata') 
+        should contain_class('tzdata') 
       }.to raise_error(Puppet::Error, /^validate_re\(\)/)
     end
   end
@@ -50,7 +50,7 @@ describe 'tzdata', :type => :class do
   describe 'osfamily Gentoo' do
     let(:facts) { {:osfamily=> 'Gentoo'} }
 
-    it { should include_class('tzdata') }
+    it { should contain_class('tzdata') }
   end
 
   describe 'unsupported osfamily' do
@@ -58,7 +58,7 @@ describe 'tzdata', :type => :class do
  
     it do
       expect {
-        should include_class('tzdata') 
+        should contain_class('tzdata') 
       }.to raise_error(Puppet::Error, /^Module tzdata is not supported on/)
     end
   end
