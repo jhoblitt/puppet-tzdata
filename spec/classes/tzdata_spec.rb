@@ -53,8 +53,14 @@ describe 'tzdata', :type => :class do
     it { should contain_class('tzdata') }
   end
 
-  describe 'unsupported osfamily' do
+  describe 'osfamily Debian' do
     let(:facts) { {:osfamily=> 'Debian'} }
+
+    it { should contain_class('tzdata') }
+  end
+
+  describe 'unsupported osfamily' do
+    let(:facts) { {:osfamily=> 'Solaris'} }
  
     it do
       expect {

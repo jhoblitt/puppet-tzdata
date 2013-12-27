@@ -96,6 +96,7 @@ Limitations
 
 * el5.x
 * el6.x
+* Debian 7.0 (wheezy)
 * Gentoo 13.0
 
 

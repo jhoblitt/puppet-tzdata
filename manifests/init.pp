@@ -28,7 +28,7 @@ class tzdata ($ensure = latest) {
   validate_re($ensure, '^present$|^absent$|^latest$')
 
   case $::osfamily {
-    'redhat': {
+    'redhat', 'debian': {
       # el5.x, el6.x
       $tzdata_package_name = 'tzdata'
     }
