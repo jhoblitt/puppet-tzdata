@@ -1,5 +1,15 @@
 
 #### [Current]
+ * [826b65d](../../commit/826b65d) - __(Joshua Hoblitt)__ replace Modulefile vs metadata.json
+ * [492a670](../../commit/492a670) - __(Joshua Hoblitt)__ replace rspec-system with beaker
+ * [a6c63ee](../../commit/a6c63ee) - __(Joshua Hoblitt)__ update fixtures stdlib to 4.2.0
+ * [89668ea](../../commit/89668ea) - __(Joshua Hoblitt)__ Merge pull request [#3](../../issues/3) from jhoblitt/feature/future_parser
+
+add future parser to travis matrix
+ * [0f3fda4](../../commit/0f3fda4) - __(Joshua Hoblitt)__ add future parser to travis matrix
+
+#### v1.1.0
+ * [9f86e5c](../../commit/9f86e5c) - __(Joshua Hoblitt)__ bump version to v1.1.0
  * [da7d5ce](../../commit/da7d5ce) - __(Joshua Hoblitt)__ Merge pull request [#2](../../issues/2) from jhoblitt/debian_support
 
 Debian support

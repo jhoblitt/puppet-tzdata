@@ -1,6 +1,6 @@
 {
   "name": "jhoblitt-tzdata",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Joshua Hoblitt <jhoblitt@cpan.org>",
   "summary": "Install/update the Olson timezone database",
   "license": "Apache-2.0",
